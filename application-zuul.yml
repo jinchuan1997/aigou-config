@@ -1,4 +1,4 @@
-server:
+﻿server:
   port: 9527
 spring:
   application:
@@ -12,7 +12,7 @@ eureka:
     prefer-ip-address: true
 zuul:
   routes:
-     myUser.serviceId: user-provider
-     myUser.path: /user/**  #以/user/开头的所有路径都转发给user-provider
+     myUser.serviceId: aigou-plat
+     myUser.path: /plat/**  #以/user/开头的所有路径都转发给user-provider
   ignored-services:  "*" #可以一个一个配置,但是很麻烦,用*来通配
   prefix: "/services" #加上统一前缀
